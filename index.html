@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7K Montaggio di Mobili</title>
+    <meta name="description"
+        content="Montagem de interiores de alto padrao com execucao tecnica, acabamento rigoroso e postura premium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="#hero" class="nav-logo">
+            <img src="assets/logo-7k-symbol.png" alt="7K">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#marcas">Marcas</a></li>
+            <li><a href="#contato" class="nav-cta">Solicitar atendimento</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-slide" style="background-image: url('./assets/abt.png');"></div>
+        <div class="hero-slide active" style="background-image: url('./assets/escritorio.png');"></div>
+        <div class="hero-slide" style="background-image: url('./assets/Luxury_modern_kitchen_202604272242.jpeg');">
+        </div>
+        <div class="hero-slide" style="background-image: url('./assets/closet.png');"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Execução para interiores de alto padrão</p>
+                <h1 class="hero-title">Execução impecável<br><em>para ambientes</em><br>que pedem excelência.</h1>
+                <p class="hero-subtitle">A 7K entrega montagem técnica, acabamento rigoroso e postura de obra compatível
+                    com arquitetos, marcas e clientes que não aceitam improviso.</p>
+                <div class="hero-btns">
+                    <a href="#contato" class="btn-primary">Solicitar atendimento</a>
+                    <a href="#portfolio" class="btn-outline">Ver portfolio</a>
+                </div>
+                <div class="hero-meta">
+                    <div class="hero-stat">
+                        <strong>25+</strong>
+                        <span>anos de experiência</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>SC . PR . RS</strong>
+                        <span>operação regional de alto nível</span>
+                    </div>
+                    <div class="hero-stat">
+                        <strong>premium</strong>
+                        <span>execução alinhada a marcas e arquitetos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-dots" id="heroDots">
+            <div class="dot active" onclick="goSlide(0)"></div>
+            <div class="dot" onclick="goSlide(1)"></div>
+            <div class="dot" onclick="goSlide(2)"></div>
+            <div class="dot" onclick="goSlide(3)"></div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
+            Scroll
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="sobre-grid">
+                <div class="sobre-image reveal">
+                    <img src="pdf_renders/page_5.png" alt="Interior de alto padrão executado pela 7K" loading="lazy">
+                    <div class="sobre-badge">
+                        <span class="sobre-badge-num">+20</span>
+                        <span class="sobre-badge-text">anos montando projetos com critério técnico e presença de
+                            marca</span>
+                    </div>
+                </div>
+                <div class="sobre-text">
+                    <p class="section-tag reveal">Posicionamento</p>
+                    <h2 class="section-title reveal">Montagem que sustenta<br>a percepção de <em>luxo</em>.</h2>
+                    <p class="reveal reveal-delay-1">A 7K compõe uma parte fundamental na execução da marcenaria, pois exige mais do que uma simples montagem: comportamento profissional, mentalidade de artista, acabamento refinado, além de padrões e processos que garantem eficiência, tempo e qualidade.</p>
+                    <p class="reveal reveal-delay-2">Atuamos em projetos residenciais, corporativos e mostras de design
+                        com a mesma premissa: proteger a experiência do cliente final enquanto a execução honra o nível
+                        da marca.</p>
+                    <div class="sobre-pillars">
+                        <div class="pillar reveal reveal-delay-1">
+                            <div class="pillar-title">Precisão</div>
+                            <div class="pillar-text">Equipamentos, ferramentas, padrões e processos, aliados a checklists e avaliações, que garantem qualidade e precisão, mesmo em escala com projetos simultâneos.</div>
+                        </div>
+                        <div class="pillar reveal reveal-delay-2">
+                            <div class="pillar-title">Postura</div>
+                            <div class="pillar-text">Equipe preparada para obras sofisticadas, com discrição,
+                                organização e respeito ao ambiente.</div>
+                        </div>
+                        <div class="pillar reveal reveal-delay-3">
+                            <div class="pillar-title">Cuidado</div>
+                            <div class="pillar-text">Proteção completa do imóvel, com uso de salva-pisos, área de corte isolada e treinamento em segurança do trabalho com certificações NR.</div>
+                        </div>
+                        <div class="pillar reveal reveal-delay-4">
+                            <div class="pillar-title">Confiança</div>
+                            <div class="pillar-text">São mais de 40 marcas atendidas e 25 anos de experiência, atuando com indústrias, lojas, arquitetos, entre outros.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="numeros">
+        <div class="container">
+            <div class="numeros-grid">
+                <div class="numero-item reveal">
+                    <span class="numero-val" data-target="47">0</span>
+                    <span class="numero-label">Marcas atendidas</span>
+                    <p class="numero-desc">Operacoes reconhecidas que confiam na 7K para proteger sua percepcao de
+                        qualidade.</p>
+                </div>
+                <div class="numero-item reveal reveal-delay-1">
+                    <span class="numero-val" data-target="25">0</span>
+                    <span class="numero-label">Anos de experiencia</span>
+                    <p class="numero-desc">Duas decadas de montagem de interiores com rigor tecnico e acabamento
+                        superior.</p>
+                </div>
+                <div class="numero-item reveal reveal-delay-2">
+                    <span class="numero-val" data-target="150">0</span>
+                    <span class="numero-label">Equipes em operacao</span>
+                    <p class="numero-desc">Atendimento estruturado para responder com agilidade em SC, PR e RS.</p>
+                </div>
+                <div class="numero-item reveal reveal-delay-3">
+                    <span class="numero-val" data-target="900">0</span>
+                    <span class="numero-label">Projetos executados</span>
+                    <p class="numero-desc">Execucao em ambientes onde detalhe, prazo e percepcao de marca precisam ser
+                        impecaveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <div class="servicos-header">
+                <div>
+                    <p class="section-tag reveal">O que fazemos</p>
+                    <h2 class="section-title reveal">Serviços para<br>projetos exigentes</h2>
+                </div>
+            </div>
+            <div class="servicos-grid">
+                <div class="servico-card reveal">
+                    <div class="servico-num">01</div>
+
+                    <div class="servico-title">Montagem de moveis planejados</div>
+                    <div class="servico-desc">Execucao precisa de mobiliario residencial e corporativo, com leitura de
+                        projeto e acabamento rigoroso.</div>
+                </div>
+                <div class="servico-card reveal reveal-delay-1">
+                    <div class="servico-num">02</div>
+                    
+                    <div class="servico-title">Palestras e eventos</div>
+                    <div class="servico-desc">Discursos que disseminam a mentalidade de artista e elevam o padrão da montagem profissional.</div>
+                </div>
+                <div class="servico-card reveal reveal-delay-2">
+                    <div class="servico-num">03</div>
+                    
+                    <div class="servico-title">Execucao em larga escala</div>
+                    <div class="servico-desc">Capacidade para operacoes corporativas, empreendimentos e projetos de alto
+                        volume com padrao elevado.</div>
+                </div>
+                <div class="servico-card reveal reveal-delay-3">
+                    <div class="servico-num">04</div>
+                    
+                    <div class="servico-title">Formacao de montadores</div>
+                    <div class="servico-desc">Treinamento especializado para sustentar consistencia, postura de obra e
+                        excelencia nos detalhes.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <p class="section-tag reveal">Nossos projetos</p>
+                <h2 class="section-title reveal">Portfólio</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <img src="./assets/Luxury_modern_kitchen_202604272242.jpeg" alt="Cozinha planejada premium"
+                        loading="lazy">
+                    <div class="portfolio-overlay">
+                        <strong>Cozinha planejada</strong>
+                        <span>acabamento e alinhamento milimetrico</span>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-1">
+                    <img src="./assets/closet.png" alt="Closet de alto padrao" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <strong>Closet exclusivo</strong>
+                        <span>execucao limpa para ambientes sensiveis</span>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-2">
+                    <img src="./assets/escritorio.png" alt="Escritorio corporativo" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <strong>Escritorio corporativo</strong>
+                        <span>escala e consistencia para operacoes premium</span>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-1">
+                    <img src="./assets/quarto.png" alt="Suite master" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <strong>Suite master</strong>
+                        <span>cuidado absoluto com acabamento final</span>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-2">
+                    <img src="./assets/abt.png" alt="Ambiente premium" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <strong>Ambiente premium</strong>
+                        <span>montagem alinhada a arquitetura e marca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="marcas">
+        <div class="container">
+            <div class="marcas-header">
+                <p class="section-tag">Marcas atendidas</p>
+                <h2 class="section-title">Marcas que confiam<br>na execucao da <img class="title-logo" src="assets/logo-7k-symbol.png" alt="7K"></h2>
+                <p class="marcas-intro">A relacao com essas operacoes foi construida com pontualidade, postura de obra,
+                    acabamento e consistencia de entrega.</p>
+            </div>
+            <div class="marcas-showcase">
+                <div class="marcas-feature reveal">
+                    <img src="assets/fg-empreendimentos.png"
+                        alt="Projetos corporativos, areas de lazer, corredores e apartamentos decorados executados pela 7K"
+                        loading="lazy">
+                    <div class="marcas-feature-copy">
+                        <span class="brand-pill">Desde 2001</span>
+                        <h3>Projetos corporativos, hoteis, escolas e ambientes decorados.</h3>
+                        <p>A 7K atua ha 25 anos neste segmento especifico, com foco em projetos corporativos, areas de
+                            lazer, corredores, apartamentos decorados, hoteis, escolas, escritorios e outros
+                            ambientes que exigem organizacao e acabamento consistente.</p>
+                        <p>Ha 4 anos ampliamos nossa atuacao para a gestao de obras com equipes simultaneas. Hoje,
+                            contamos com mais de 150 equipes de montagem parceiras para responder com escala,
+                            padronizacao e acompanhamento do inicio ao fim.</p>
+                        <div class="marcas-certificacoes">
+                            <span>Certificados pela Blum (Austria)</span>
+                            <span>Certificados pela Hafele (Alemanha)</span>
+                        </div>
+                        <div class="marcas-servicos">
+                            <h4>Servicos que prestamos</h4>
+                            <ul>
+                                <li>Gestao de obras do inicio, meio e fim, com processos, padroes, checklists e
+                                    avaliacoes.</li>
+                                <li>Treinamento para montadores.</li>
+                                <li>Consultoria para lojistas e fabricas.</li>
+                                <li>Palestras e eventos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-marquee reveal" aria-label="Marcas atendidas">
+                    <div class="brand-track">
+                        <div class="brand-card"><img src="assets/logos/idelli.png" alt="Idelli" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/dell-anno.png" alt="Dell Anno" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/todeschini.png" alt="Todeschini" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/florense.png" alt="Florense" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/italinea.png" alt="Italinea" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/sca.png" alt="SCA" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/marel.png" alt="Marel" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/finger.png" alt="Finger" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/bontempo.png" alt="Bontempo" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/casttini.png" alt="Casttini" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/dalmobile.png" alt="Dalmobile" loading="lazy"></div>
+                        <div class="brand-card"><img src="assets/logos/finotoc.png" alt="Finotoc" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/idelli.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/dell-anno.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/todeschini.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/florense.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/italinea.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/sca.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/marel.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/finger.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/bontempo.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/casttini.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/dalmobile.png" alt="" loading="lazy"></div>
+                        <div class="brand-card" aria-hidden="true"><img src="assets/logos/finotoc.png" alt="" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimento">
+        <div class="container">
+            <div class="depo-card reveal">
+                <p class="section-tag" style="justify-content:center;">Depoimento</p>
+                <p class="depo-quote">"Alto nivel de responsabilidade. Trabalham com moveis sofisticados, elegantes e
+                    arrojados, com uma entrega fenomenal, muita eficiencia e compromisso com o cliente."</p>
+                <div class="depo-author">
+                    <div class="depo-line"></div>
+                    <span class="depo-name">Jackson de Aquino</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="contato-info reveal">
+                    <p class="section-tag">Solicitar atendimento</p>
+                    <h2 class="section-title">Fale com a <img class="title-logo" src="assets/logo-7k-symbol.png" alt="7K"> e receba uma proposta mais completa.</h2>
+                    <p class="contato-lead">Organizamos o primeiro contato para acelerar a analise tecnica, entender o
+                        porte do projeto e direcionar a equipe certa desde o inicio.</p>
+                    <div class="contato-badges">
+                        <span class="badge-chip">Atendimento comercial</span>
+                        <span class="badge-chip">Escopo tecnico</span>
+                        <span class="badge-chip">Resposta por WhatsApp</span>
+                    </div>
+                    <div class="contato-items">
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.6.57 1 1 0 011 1V21a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.6 1 1 0 01-.24 1.01z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contato-item-label">Telefone / WhatsApp</div>
+                                <div class="contato-item-val">+55 47 99128 4988</div>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contato-item-label">Base operacional</div>
+                                <div class="contato-item-val">Av. Nilo Bittencourt, no. 306<br>Lote 010 Box 3150<br>Sao
+                                    Vicente - Itajai - SC, 88312-400</div>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contato-item-label">E-mail</div>
+                                <div class="contato-item-val">montaggio7k@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contato-item">
+                            <div class="contato-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" fill="none"
+                                        stroke="var(--gold-soft)" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contato-item-label">Site</div>
+                                <div class="contato-item-val">7kmontaggio.com</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contato-process">
+                        <div class="process-card">
+                            <span class="process-step">01</span>
+                            <strong>Envie os dados do projeto</strong>
+                            <p>Area, cidade, prazo e tipo de montagem.</p>
+                        </div>
+                        <div class="process-card">
+                            <span class="process-step">02</span>
+                            <strong>Receba retorno comercial</strong>
+                            <p>Triagem mais clara para proposta, agenda e equipe recomendada.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contato-panel reveal reveal-delay-1">
+                    <div class="contato-form">
+                        <p class="form-title">Solicite seu atendimento</p>
+                        <p class="form-helper">Preencha os campos abaixo e abriremos uma mensagem pronta no WhatsApp com
+                            o briefing do seu projeto.</p>
+                        <form id="quoteForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nome">Nome</label>
+                                    <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Telefone</label>
+                                    <input id="telefone" name="telefone" type="tel" placeholder="(47) 00000-0000"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">E-mail</label>
+                                    <input id="email" name="email" type="email" placeholder="seu@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cidade">Cidade / Estado</label>
+                                    <input id="cidade" name="cidade" type="text" placeholder="Ex.: Itajai - SC">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="servico">Opções de serviço</label>
+                                    <select id="servico" name="servico" required>
+                                        <option value="" disabled selected>Selecione o tipo de serviço</option>
+                                        <option>Residencial</option>
+                                        <option>Comercial</option>
+                                        <option>Corporativo</option>
+                                        <option>Treinamento</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="perfil">Perfil</label>
+                                    <select id="perfil" name="perfil" required>
+                                        <option value="" disabled selected>Selecione um perfil</option>
+                                        <option>Montador</option>
+                                        <option>Lojistas</option>
+                                        <option>Fábrica</option>
+                                        <option>Eventos e palestras</option>
+                                        <option>Outros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Detalhes do projeto</label>
+                                <textarea id="mensagem" name="mensagem"
+                                    placeholder="Descreva o tipo de ambiente, volume de montagem, marcas envolvidas e qualquer necessidade tecnica importante."
+                                    required></textarea>
+                            </div>
+                            <button class="btn-submit" type="submit">Enviar briefing pelo WhatsApp</button>
+                        </form>
+                        <p class="form-footnote">Ao enviar, voce sera direcionado para o WhatsApp da 7K com a mensagem
+                            ja estruturada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#hero" class="footer-logo">
+                    <img src="assets/logo-7k-symbol.png" alt="7K">
+                </a>
+                <p class="footer-copy">&copy; 2025 7K Montaggio di Mobili. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#contato">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
