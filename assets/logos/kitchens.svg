@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-label="Kitchens">
+  <g fill="#000">
+    <path d="M30 16a32 32 0 0 0 0 64V64a16 16 0 0 1 0-32V16Z"/>
+    <path d="M38 16v64h12V16H38Zm20 6v52a32 32 0 0 0 0-52Z"/>
+    <text x="94" y="52" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Kitchens</text>
+    <text x="96" y="74" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" letter-spacing=".2">exigente como voce</text>
+  </g>
+</svg>
