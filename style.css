@@ -1071,7 +1071,7 @@ nav.scrolled {
   width: max-content;
   gap: 0.85rem;
   padding-inline: 0.85rem;
-  animation: brandMarquee 42s linear infinite;
+  animation: brandMarquee 24s linear infinite;
   will-change: transform;
 }
 
